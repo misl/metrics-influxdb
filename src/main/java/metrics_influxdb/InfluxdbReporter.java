@@ -40,16 +40,16 @@ import com.codahale.metrics.Timer;
 public class InfluxdbReporter extends ScheduledReporter {
   private static String[] COLUMNS_TIMER = {
       "time", "count"
-      , "min", "max", "mean", "std-dev"
-      , "50-percentile", "75-percentile", "95-percentile", "99-percentile", "999-percentile"
-      , "one-minute", "five-minute", "fifteen-minute", "mean-rate"
-      , "run-count"
+      , "min", "max", "mean", "stddev"
+      , "50percentile", "75percentile", "95percentile", "99percentile", "999percentile"
+      , "1minute", "5minute", "15minute", "meanrate"
+      , "runcount"
   };
   private static String[] COLUMNS_HISTOGRAM = {
       "time", "count"
-      , "min", "max", "mean", "std-dev"
-      , "50-percentile", "75-percentile", "95-percentile", "99-percentile", "999-percentile"
-      , "run-count"
+      , "min", "max", "mean", "stddev"
+      , "50percentile", "75percentile", "95percentile", "99percentile", "999percentile"
+      , "runcount"
   };
   private static String[] COLUMNS_COUNT = {
       "time", "count"
@@ -59,7 +59,7 @@ public class InfluxdbReporter extends ScheduledReporter {
   };
   private static String[] COLUMNS_METER = {
       "time", "count"
-      , "one-minute", "five-minute", "fifteen-minute", "mean-rate"
+      , "1minute", "5minute", "15minute", "meanrate"
   };
 
   /**
