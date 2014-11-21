@@ -1,3 +1,5 @@
+This fork is to better support Grafana dashboards
+
 The library provide :
 
 * a lighter client than influxdb-java to push only series to an [InfluxDB](http://influxdb.org) server.
